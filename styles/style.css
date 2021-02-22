@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+}
+
+.topbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.01);
+  padding: 1rem;
+}
+
+.heading-1 {
+  font-size: 4rem;
+  line-height: 4.8rem;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.fifty-percent-width {
+  width: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

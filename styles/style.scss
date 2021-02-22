@@ -1,0 +1,27 @@
+// Headings
+$heading-1-size: 4rem;
+$heading-1-line-height: 4.8rem;
+$heading-1-color: rgba(0, 0, 0, .7);
+
+
+
+* {
+    margin: 0;
+}
+
+.topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .01);
+    padding: 1rem;
+}
+
+.heading-1 {
+    font-size: $heading-1-size;
+    line-height: $heading-1-line-height;
+    color: $heading-1-color;
+}
+
+// mixins
+.fifty-percent-width { width: 3rem; }
