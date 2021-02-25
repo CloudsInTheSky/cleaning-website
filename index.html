@@ -39,7 +39,7 @@
               important tasks done, go out with family or friends, or attend other commitments. That is why we provide cleaning for you, at a flexible time, and an affordable
               rate that will take care of your house cleaning so you have the time you need to stay productive. 
             </p> 
-            <button class="main-button">Contact Us</button>     
+            <button class="btn-main">Contact Us</button>     
         </div>
     </div>
     </header>
@@ -60,4 +60,22 @@
 </div>
     
 </body>
+<script type="text/javascript">
+    let buttons = document.querySelectorAll('button');
+    buttons.forEach( btn => {
+        btn.addEventListener('click' , function(e) {
+            let x = e.clientX - e.target.offsetLeft;
+            let y = e.clientY - e.target.offsetLeft;
+
+            let ripples = document.createElement('span');
+            ripples.style.left = x + 'px';
+            ripples.style.top = y + 'px';
+            btn.appendChild(ripples);
+
+            setTimeout(() => {
+                ripples.remove()
+            },1000);
+        })
+    })
+</script>
 </html>

@@ -32,16 +32,39 @@ p:not(:first-child) {
     padding-top: 1rem;
 }
 
-.main-button {
+.btn-main {
     cursor: pointer;
     margin-top: 2rem;
-    color: $brand-green;
+    color: white;
+    border: 0px solid transparent;
     font-size: $body-size;
-    background-color: white;
+    background: linear-gradient(to bottom right, #ddeb24 10%, $brand-green 90%);
     border-radius: .5rem;
     margin-right: 2rem;
     padding: 1rem;
     text-decoration: none;
+    overflow: hidden;
+    & span {
+        position: absolute;
+        background: white;
+        transform: translate(50%,50%);
+        pointer-events: none;
+        border-radius: 50%;
+        animation: ripple 1s linear infinite;
+    }
+}
+
+@keyframes ripple {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: .5;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
 }
 
 .topbar {

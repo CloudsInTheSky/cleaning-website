@@ -19,16 +19,56 @@ p:not(:first-child) {
   padding-top: 1rem;
 }
 
-.main-button {
+.btn-main {
   cursor: pointer;
   margin-top: 2rem;
-  color: #54ce91;
+  color: white;
+  border: 0px solid transparent;
   font-size: 1.2rem;
-  background-color: white;
+  background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ddeb24), color-stop(90%, #54ce91));
+  background: linear-gradient(to bottom right, #ddeb24 10%, #54ce91 90%);
   border-radius: .5rem;
   margin-right: 2rem;
   padding: 1rem;
   text-decoration: none;
+  overflow: hidden;
+}
+
+.btn-main span {
+  position: absolute;
+  background: white;
+  -webkit-transform: translate(50%, 50%);
+          transform: translate(50%, 50%);
+  pointer-events: none;
+  border-radius: 50%;
+  -webkit-animation: ripple 1s linear infinite;
+          animation: ripple 1s linear infinite;
+}
+
+@-webkit-keyframes ripple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: .5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
+}
+
+@keyframes ripple {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: .5;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0;
+  }
 }
 
 .topbar {
