@@ -1,18 +1,27 @@
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-*:after {
-  margin: 0;
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: "Rubik", sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
   color: rgba(0, 0, 0, 0.9);
   letter-spacing: .09rem;
-  line-height: 1.9rem;
+  line-height: 2.9rem;
 }
 
 strong {
@@ -29,7 +38,7 @@ p:not(:first-child) {
   margin-top: 2rem;
   color: white;
   border: 0px solid transparent;
-  font-size: 1.1rem;
+  font-size: 2.6rem;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ddeb24), color-stop(90%, #54ce91));
   background: linear-gradient(to bottom right, #ddeb24 10%, #54ce91 90%);
   border-radius: .5rem;
@@ -100,12 +109,16 @@ p:not(:first-child) {
 
 .main-header {
   height: auto;
+  background-image: url(../../img/living-room-clean.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 2100px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ddeb24), color-stop(90%, #54ce91));
   background: linear-gradient(to bottom right, #ddeb24 10%, #54ce91 90%);
   background-color: rgba(0, 0, 0, 0.9);
 }
 
-.nav-list {
+.main-header-nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,15 +129,17 @@ p:not(:first-child) {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-top: 2rem;
 }
 
-.nav-list-item {
+.main-header-nav-list-item {
+  font-size: 2.6rem;
   display: inline;
   margin: 1rem .25rem;
   padding: .5rem 1rem;
 }
 
-.nav-list-item:last-child a {
+.main-header-nav-list-item:last-child a {
   color: #54ce91;
   background-color: white;
   border-radius: .5rem;
@@ -135,7 +150,7 @@ p:not(:first-child) {
           box-shadow: .5px .5px 5px darkgreen;
 }
 
-.nav-list-item:last-child a:hover {
+.main-header-nav-list-item:last-child a:hover {
   background-color: white;
   -webkit-box-shadow: .1px .1px .1px darkgreen;
           box-shadow: .1px .1px .1px darkgreen;
@@ -143,25 +158,16 @@ p:not(:first-child) {
   transition: .3s;
 }
 
-.nav-list-item a {
+.main-header-nav-list-item a {
   color: white;
   text-decoration: none;
 }
 
-.nav-list-item a:hover {
+.main-header-nav-list-item a:hover {
   padding-bottom: .5rem;
   border-bottom: 5px solid white;
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.heading-one {
-  font-size: 2rem;
-  font-family: "Spectral", serif;
-  font-weight: 800;
-  line-height: 2.8rem;
-  color: rgba(0, 0, 0, 0.9);
-  padding-left: 1rem;
 }
 
 .header {
@@ -170,7 +176,7 @@ p:not(:first-child) {
 }
 
 .header--image {
-  background: url("/img/cleaning-bicep") no-repeat;
+  background: url("../../img/cleaning-bicep") no-repeat;
   background-size: contain;
 }
 
@@ -248,12 +254,11 @@ p:not(:first-child) {
   }
 }
 
-/*Services Section */
 .container-services {
   background-color: #f8f8f8;
   height: 90vh;
-  margin-top: -.75rem;
-  padding: 7rem 2rem;
+  margin-top: -1rem;
+  padding: 7rem 3rem 15rem;
 }
 
 .container-services-title {
@@ -265,7 +270,8 @@ p:not(:first-child) {
           justify-content: center;
   color: #54ce91;
   font-family: "Spectral", serif;
-  font-size: 2.5rem;
+  font-size: 5rem;
+  margin: 3rem 0rem 6rem;
 }
 
 .container-services-three-column {
@@ -306,7 +312,16 @@ p:not(:first-child) {
   padding: 10%;
 }
 
+.heading-one {
+  font-size: 4.5rem;
+  font-family: "Spectral", serif;
+  font-weight: 800;
+  line-height: 5rem;
+  color: rgba(0, 0, 0, 0.9);
+  padding-left: 1rem;
+}
+
 .fifty-percent-width {
-  width: 3rem;
+  width: 6rem;
 }
 /*# sourceMappingURL=style.css.map */
