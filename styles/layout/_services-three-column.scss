@@ -1,0 +1,37 @@
+.container-services{
+    background-color: $brand-offwhite;
+    height: 90vh;
+    margin-top: -1rem;
+    padding: 7rem 3rem 15rem;
+    &-title {
+        display: flex;
+        justify-content: center;
+        color: $brand-green;
+        font-family: $serif;
+        font-size: $heading-1-size + .5;
+        margin: 3rem 0rem 6rem;
+    }
+    &-three-column  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 2rem 0;
+    &-item  {  
+        width: 30%;
+        height: auto;
+        background-color: white;
+        box-shadow: 1px 1px 9px lightgray;
+        border-bottom: 10px solid $brand-green;
+        &-img {
+            background: $brand-gradient;
+            & img{
+                width: 100%;
+            }
+        }
+        &-content {
+            padding: 10%;
+        }
+      }
+    }
+}
