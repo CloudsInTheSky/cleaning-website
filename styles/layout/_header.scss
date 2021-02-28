@@ -1,9 +1,5 @@
 .main-header {
     height: auto;
-    background-image: url(../../img/living-room-clean.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    max-width: 2100px;
     background: $brand-gradient;
     background-color: $brand-black;
     &-nav-list{
@@ -46,14 +42,12 @@
     }
 }
 
+
 .header {
     padding: .5rem 0rem;
     height: auto;
-    &--image{
-    background: url("../../img/cleaning-bicep") no-repeat;
+    background: url("../img/cleaning-bicep") no-repeat;
     background-size: contain;
-
-    }
     &--column{
         margin: 5% 5% 0 40%;
         padding: 5%;
