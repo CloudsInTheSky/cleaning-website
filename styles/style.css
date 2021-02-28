@@ -109,10 +109,6 @@ p:not(:first-child) {
 
 .main-header {
   height: auto;
-  background-image: url(../../img/living-room-clean.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  max-width: 2100px;
   background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ddeb24), color-stop(90%, #54ce91));
   background: linear-gradient(to bottom right, #ddeb24 10%, #54ce91 90%);
   background-color: rgba(0, 0, 0, 0.9);
@@ -173,10 +169,7 @@ p:not(:first-child) {
 .header {
   padding: .5rem 0rem;
   height: auto;
-}
-
-.header--image {
-  background: url("../../img/cleaning-bicep") no-repeat;
+  background: url("../img/cleaning-bicep") no-repeat;
   background-size: contain;
 }
 
@@ -310,6 +303,39 @@ p:not(:first-child) {
 
 .container-services-three-column-item-content {
   padding: 10%;
+}
+
+.tips {
+  position: static;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 20rem 10rem;
+  height: 50vh;
+  max-width: 1400px;
+  background: white url(../img/wall-chair-lamp.jpg);
+  background-size: cover;
+}
+
+.tips-headline {
+  margin: 0 0 5rem;
+  color: white;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tips-content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 60%;
+  padding-right: 10%;
 }
 
 .heading-one {
