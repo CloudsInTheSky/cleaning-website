@@ -1,0 +1,22 @@
+.tips{
+    position: static;
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 20rem 10rem;
+    height: 50vh;
+    max-width: 1400px;
+    background: white url(../img/wall-chair-lamp.jpg);
+    background-size: cover;
+    &-headline {
+        margin: 0 0 5rem;
+        color: white;
+        justify-content: center;
+    }
+    &-content {
+        align-items: flex-start;
+        width: 60%;
+        padding-right: 10%;
+    }
+}
