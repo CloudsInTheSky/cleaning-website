@@ -22,10 +22,9 @@
     <div class="main-header">
         <navbar class="main-header-nav-bar">
             <ul class="main-header-nav-list">
-                <li class="main-header-nav-list-item"><a href="">service</a></li>
-                <li class="main-header-nav-list-item"><a href="">tips</a></li>
-                <li class="main-header-nav-list-item"><a href="">about</a></li>
-                <li class="main-header-nav-list-item"><a href="">contact us</a></li>
+                <li class="main-header-nav-list-item"><a href="#service">service</a></li>
+                <li class="main-header-nav-list-item"><a href="#tips">tips</a></li>
+                <li class="main-header-nav-list-item" id="btnContact"><a href="">contact us</a></li>
             </ul>
         </navbar>
         <header class="header">
@@ -117,10 +116,35 @@
             So you think we'll clean your house and leave just like that? We offer tips on how to maintain a clean house, answer your cleaning questions, provide assessment on which products are best for you, your health, and your house. We also provide another special discount for recurring clients. We are so committed to cleaning that we've created a whole web page about cleaning suggestions.
         </p>
         <button class="btn-main">Contact Us</button>     
-
 </div>
-    
+
+<!-- Form Modal -->
+<div class="modal-form"> 
+    <form class="modal-form-content" id="modalForm">
+        <span class="modal-form-content-close">&times</span>
+        <h2 class="modal-form-content-title">Contact Us</h2>
+        <p>Fill out this form to find out more about cost and services. We look forward to hearing from you.</p>
+        <div class="inline">
+            <label for="firstname">First Name</label>
+            <input class="modal-form-content-input" type="text" name="firstname">
+            
+            <label for="lastname">Last Name</label>
+            <input class="modal-form-content-input" type="text" name="lastname">
+        </div>  
+        <label for="reasons">Subject</label><br>
+        <select name="subject" id="subject">
+            <option value="Estimate">I would like to get an estimate</option>
+            <option value="Curious">I would like to know more about your services</option>
+            <option value="Cost">What are your rates?</option>
+        </select><br>
+        <textarea name="comment" id="textarea" cols="30" rows="10"></textarea><br>
+        <input type="submit">
+    </form>
+</div>  
 </body>
+
+<!--JS Scripts-->
+
 <script type="text/javascript">
     let buttons = document.querySelectorAll('button');
     buttons.forEach( btn => {
