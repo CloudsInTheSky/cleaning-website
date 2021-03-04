@@ -339,6 +339,7 @@ p:not(:first-child) {
 }
 
 .modal-form {
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -387,9 +388,25 @@ p:not(:first-child) {
   margin-right: 2rem;
 }
 
+.modal-form-content select {
+  padding: 1rem;
+}
+
 .inline {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
+  font-size: 1.4rem;
+}
+
+.inline label {
+  padding-right: 1.2rem;
+}
+
+textarea, input[type="submit"] {
+  margin-top: 2rem;
+  padding: 1rem;
 }
 
 .heading-one {
