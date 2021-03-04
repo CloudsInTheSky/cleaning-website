@@ -1,0 +1,22 @@
+#topBtn{
+    border: 2px solid $brand-black;
+    background-color: rgba(250,250,250,.2);
+    font-size: $body-size;
+    color: $brand-black;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1.5rem;
+    margin: 2rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba($brand-black,.7);
+        color: white;
+        transition: .1s;
+    }
+}
