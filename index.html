@@ -38,7 +38,7 @@
                     important tasks done, go out with family or friends, or attend other commitments. That is why we provide cleaning for you, at a flexible time, and an affordable
                     rate that will take care of your house cleaning so you have the time you need to stay productive. 
                     </p> 
-                    <button class="btn-main">Contact Us</button>     
+                    <button id="contactBtn" class="btn-main">Contact Us</button>     
                 </div>
         </header>
 
@@ -119,9 +119,11 @@
 </div>
 
 <!-- Form Modal -->
-<div class="modal-form"> 
+<div id="modalForm" class="modal-form"> 
     <form class="modal-form-content" id="modalForm">
-        <span class="modal-form-content-close">&times</span>
+        <span class="modal-form-content-close">
+            &times
+        </span>
         <h2 class="modal-form-content-title">Contact Us</h2>
         <p>Fill out this form to find out more about cost and services. We look forward to hearing from you.</p>
         <div class="inline">
@@ -138,7 +140,7 @@
             <option value="Cost">What are your rates?</option>
         </select><br>
         <textarea name="comment" id="textarea" cols="30" rows="10"></textarea><br>
-        <input type="submit">
+        <input class="btn-main" type="submit">
     </form>
 </div>  
 </body>
@@ -163,4 +165,6 @@
         })
     })
 </script>
+
+<script src="scripts/modal-form.js"></script>
 </html>
