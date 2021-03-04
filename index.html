@@ -22,7 +22,7 @@
     <div class="main-header">
         <navbar class="main-header-nav-bar">
             <ul class="main-header-nav-list">
-                <li class="main-header-nav-list-item"><a href="#service">service</a></li>
+                <li class="main-header-nav-list-item"><a href="#services">services</a></li>
                 <li class="main-header-nav-list-item"><a href="#tips">tips</a></li>
                 <li class="main-header-nav-list-item" id="btnContact"><a href="">contact us</a></li>
             </ul>
@@ -58,7 +58,7 @@
 
 <!-- Services Section -->
 <div class="container-services">
-    <h2 class="container-services-title">
+    <h2 id="services" class="container-services-title">
         Services
     </h2>
     <div class="container-services-three-column">
@@ -109,7 +109,7 @@
 
 <!-- Tips Section -->
 <div class="tips">
-        <h2 class="tips-headline">
+        <h2 id="tips" class="tips-headline">
             Taking Care of Your House and Your Loved Ones
         </h2>
         <p class="tips-content">
@@ -117,6 +117,8 @@
         </p>
         <button class="btn-main">Contact Us</button>     
 </div>
+
+<button onclick="toTop()" id="topBtn" title="to-top">&#9650;</button>
 
 <!-- Form Modal -->
 <div id="modalForm" class="modal-form"> 
@@ -167,4 +169,5 @@
 </script>
 
 <script src="scripts/modal-form.js"></script>
+<script src="scripts/top-btn.js"></script>
 </html>
