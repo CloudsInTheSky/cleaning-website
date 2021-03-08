@@ -1,4 +1,24 @@
+// MEDIA QUERY MANAGER
+/*
+0-600px: phone
+600 - 900px: tablet portrait
+900 - 1200px: Tablet lanscape
+1200-1800: destop first (our design)
+1800+ * : big desktop
+*/
+
+/*
+brekpoint arguments
+- phone
+- tablet portrait
+- tablet landscape
+- tablet desktop
+
+1em = 16px
+*/
+
 @import "abstracts/variables";
+@import "abstracts/mixins";
 
 @import "base/base";
 
