@@ -7,22 +7,26 @@
         flex-direction: row;
         justify-content: flex-end;
         padding-top: 2rem;
+        @include respond(phone) {
+            flex-direction: column;
+            padding: 1rem 1.7rem;
+        }
         &-item {
             font-size: $nav-size;
             display: inline;
             margin: 1rem .25rem;
             padding: .5rem 1rem;
             &:last-child a{
-                color: $brand-green;
+                color: $brand-green-darker;
                 background-color: white;
                 border-radius: .5rem;
                 margin-right: 2rem;
                 padding: 1rem;
                 text-decoration: none;
-                box-shadow: .5px .5px 5px darkgreen;
+                box-shadow: .5px .5px 5px $brand-green-darker;
                 &:hover {
                     background-color: white;
-                    box-shadow: .1px .1px .1px darkgreen;
+                    box-shadow: .1px .1px .1px $brand-green-darker;
                     transition: .3s;
                 }
             }
@@ -33,7 +37,7 @@
 
 
 .main-header-nav-list-item a {
-    color: white;
+    color: $brand-green-darker;
     text-decoration: none;
     &:hover {
         padding-bottom: .5rem;

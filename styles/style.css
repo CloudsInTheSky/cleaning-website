@@ -238,6 +238,16 @@ p:not(:first-child) {
   padding-top: 2rem;
 }
 
+@media (max-width: 37.5em) {
+  .main-header-nav-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem 1.7rem;
+  }
+}
+
 .main-header-nav-list-item {
   font-size: 2.6rem;
   display: inline;
@@ -246,26 +256,26 @@ p:not(:first-child) {
 }
 
 .main-header-nav-list-item:last-child a {
-  color: #54ce91;
+  color: #1C5E3D;
   background-color: white;
   border-radius: .5rem;
   margin-right: 2rem;
   padding: 1rem;
   text-decoration: none;
-  -webkit-box-shadow: .5px .5px 5px darkgreen;
-          box-shadow: .5px .5px 5px darkgreen;
+  -webkit-box-shadow: 0.5px 0.5px 5px #1C5E3D;
+          box-shadow: 0.5px 0.5px 5px #1C5E3D;
 }
 
 .main-header-nav-list-item:last-child a:hover {
   background-color: white;
-  -webkit-box-shadow: .1px .1px .1px darkgreen;
-          box-shadow: .1px .1px .1px darkgreen;
+  -webkit-box-shadow: 0.1px 0.1px 0.1px #1C5E3D;
+          box-shadow: 0.1px 0.1px 0.1px #1C5E3D;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .main-header-nav-list-item a {
-  color: white;
+  color: #1C5E3D;
   text-decoration: none;
 }
 
