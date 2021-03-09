@@ -548,11 +548,21 @@ p:not(:first-child) {
 }
 
 .inline {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline;
   width: 100%;
   font-size: 1.4rem;
+}
+
+@media (max-width: 56.25em) {
+  .inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .inline label {

@@ -42,9 +42,13 @@
 }
 
 .inline {
-    display: flex; 
+    display: inline; 
     width: 100%;
     font-size: 1.4rem;
+    @include respond(tab-port){
+        display: flex;
+        flex-direction: column;
+    }
     & label {
         padding-right: 1.2rem;
     }
