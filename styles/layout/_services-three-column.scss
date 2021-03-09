@@ -17,12 +17,19 @@
         flex-wrap: wrap;
         justify-content: space-between;
         margin: 2rem 0;
+        @include respond(tab-port) {
+            flex-direction: column;
+        }
     &-item  {  
         width: 30%;
         height: auto;
         background-color: white;
         box-shadow: 1px 1px 9px lightgray;
         border-bottom: 10px solid $brand-green;
+        @include respond(tab-port) {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
         &-img {
             background: $brand-gradient;
             & img{
@@ -30,7 +37,7 @@
             }
         }
         &-content {
-            padding: 10%;
+            padding: 5%;
         }
       }
     }
