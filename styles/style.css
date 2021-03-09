@@ -98,7 +98,6 @@ p:not(:first-child) {
   background: -webkit-gradient(linear, left top, right bottom, color-stop(10%, #ddeb24), color-stop(90%, #54ce91));
   background: linear-gradient(to bottom right, #ddeb24 10%, #54ce91 90%);
   border-radius: .5rem;
-  margin-right: 2rem;
   padding: 1rem;
   text-decoration: none;
   overflow: hidden;
@@ -378,9 +377,9 @@ p:not(:first-child) {
 
 .container-services {
   background-color: #f8f8f8;
-  height: 90vh;
+  height: auto;
   margin-top: -1rem;
-  padding: 7rem 3rem 15rem;
+  padding: 7rem 3rem 2rem;
 }
 
 .container-services-title {
@@ -452,23 +451,28 @@ p:not(:first-child) {
 
 .tips {
   position: static;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   margin: 0;
-  padding: 20rem 10rem;
-  height: 50vh;
+  padding: 20% 10%;
+  height: auto;
   max-width: 1400px;
   background: white url(../img/wall-chair-lamp.jpg);
   background-size: cover;
 }
 
+@media (max-width: 37.5em) {
+  .tips {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .tips-headline {
-  margin: 0 0 5rem;
+  line-height: 4rem;
   color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -481,6 +485,12 @@ p:not(:first-child) {
           align-items: flex-start;
   width: 60%;
   padding-right: 10%;
+}
+
+@media (max-width: 37.5em) {
+  .tips-content {
+    width: 100%;
+  }
 }
 
 .modal-form {
